@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-CODE</title>
+    <style>
+        /* Estilo base */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+            color: #ffffff;
+margin:auto;
+padding: 10px;
+background-color: #1c274d;
+        }
+        nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    
+    color: #ffffff;
+}
+
+
+
+ul.menu li{
+    display: inline;
+    padding: 20px;
+    text-decoration: none;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para o QR code */
+#qrcode {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Estilo para o texto explicativo */
+.explanation {
+    text-align: center;
+}
+
+/* Estilo para telas menores (ex: smartphones) */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>QR-CODE</QR-CODE></h1> 
+        <nav>
+            <ul class="menu">
+                <li><a href="caracracha.html">CRACHÁ</a></li>
+                <li><a href="QR-CODE.html">QR-CODE</a></li>
+                <li><a href="SOBRE.HTML">SOBRE</a></li>
+            </ul>
+        </nav>
+       </header>
+    <!-- biblioteca qrcode.js -->
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+<!-- Elemento para exibir o QR code -->
+<div id="qrcode"></div>
+
+<script>
+    var userData = {
+        category: category,
+        termo_de_pesquisa: termo_de_pesquisa,
+        info: info
+    };
+
+    // Gere o QR code usando qrcode.js
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+        text: JSON.stringify(userData),
+        width: 128,
+        height: 128
+    });
+</script>
+</body>
+</html>

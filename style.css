@@ -1,0 +1,69 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #d3cccc ;
+}
+header {
+display: flex;
+align-items: center;
+background-color: #1c274d;
+margin: 0px;
+padding: 5px;
+}
+
+h1 {
+    margin-left: 20px;
+    padding: 0%;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a {
+    color: #ffffff;
+    padding: 20px;
+    text-decoration: none;
+}
+/* Estilo para tornar a barra de pesquisa estática */
+.category-container {
+align-items: self-end;
+    position: static;
+    top: auto;
+    right: auto;
+    padding: 10px;
+}
+#dynamicSearch {
+position: static;
+    top: auto;
+    right: auto;
+    background-color: rgb(182, 182, 182); /* Cor de fundo da barra de pesquisa */
+    padding: 10px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efeito visual */
+}
+
+
+main {
+    margin-top: auto; 
+}
+.cracha {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.cracha img {
+    width: 100px;
+    height: 125px;
+    margin-right: 20px;
+}
+.cracha p {
+    margin: 5px;
+}
